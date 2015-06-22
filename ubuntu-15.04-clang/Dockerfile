@@ -17,7 +17,7 @@ RUN \
 RUN mkdir -p /usr/src && cd /usr/src/ && git clone https://github.com/justincormack/frankenlibc.git
 
 ENV \
-  SUDO_UID=1000
+  SUDO_UID=1000 \
   CC=clang
 
 RUN \
