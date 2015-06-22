@@ -3,6 +3,7 @@ FROM centos:centos7
 MAINTAINER Justin Cormack <justin@specialbusservice.com>
 
 RUN \
+  yum update -y \
   yum install -y \
   git \
   libseccomp-devel \

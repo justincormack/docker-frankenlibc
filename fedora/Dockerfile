@@ -3,6 +3,7 @@ FROM fedora:latest
 MAINTAINER Justin Cormack <justin@specialbusservice.com>
 
 RUN \
+  dnf update -y \
   dnf install -y \
   git \
   libseccomp-devel \
