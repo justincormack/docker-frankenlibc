@@ -3,13 +3,13 @@ FROM fedora:latest
 MAINTAINER Justin Cormack <justin@specialbusservice.com>
 
 RUN \
-  yum install -y \
+  dnf install -y \
   git \
   libseccomp-devel \
-  libsseccomp \
+  libseccomp \
   clang \
   && \
-  yum groupinstall -y "Development Tools"
+  dnf groupinstall -y "Development Tools"
 
 RUN mkdir -p /usr/src && cd /usr/src/ && git clone https://github.com/justincormack/frankenlibc.git
 
