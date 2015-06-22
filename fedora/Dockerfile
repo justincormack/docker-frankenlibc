@@ -8,6 +8,8 @@ RUN \
   libseccomp-devel \
   libseccomp \
   clang \
+  tar \
+  hostname \
   && \
   dnf groupinstall -y "Development Tools"
 

@@ -8,6 +8,8 @@ RUN \
   libseccomp-devel \
   libsseccomp \
   clang \
+  tar \
+  hostname \
   && \
   yum groupinstall -y "Development Tools"
 
