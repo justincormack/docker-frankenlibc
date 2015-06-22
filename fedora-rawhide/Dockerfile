@@ -3,7 +3,7 @@ FROM fedora:rawhide
 MAINTAINER Justin Cormack <justin@specialbusservice.com>
 
 RUN \
-  dnf update -y \
+  dnf update -y && \
   dnf install -y \
   git \
   libseccomp-devel \
