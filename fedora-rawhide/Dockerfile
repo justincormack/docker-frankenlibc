@@ -3,8 +3,8 @@ FROM fedora:rawhide
 MAINTAINER Justin Cormack <justin@specialbusservice.com>
 
 RUN \
-  dnf update -y && \
-  dnf install -y \
+  yum update -y && \
+  yum install -y \
   git \
   libseccomp-devel \
   libseccomp \
@@ -12,7 +12,7 @@ RUN \
   tar \
   hostname \
   && \
-  dnf groupinstall -y "Development Tools"
+  yum groupinstall -y "Development Tools"
 
 RUN mkdir -p /usr/src && cd /usr/src/ && git clone https://github.com/justincormack/frankenlibc.git
 
